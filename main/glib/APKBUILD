@@ -41,6 +41,7 @@ build() {
 		--disable-compile-warnings \
 		--with-pcre=system \
 		--with-pic \
+		--enable-static \
 		|| return 1
 	make || return 1
 }

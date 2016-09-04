@@ -48,7 +48,7 @@ build() {
 		--host=$CHOST \
 		--prefix=/usr \
 		--enable-threadsafe \
-		--disable-static \
+		--enable-static \
 		--enable-readline \
 		--enable-dynamic-extensions \
 		|| return 1
