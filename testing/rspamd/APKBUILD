@@ -49,7 +49,6 @@ package() {
 	make DESTDIR="$pkgdir" install || return 1
 	find "$pkgdir"/usr/bin -type l -delete
 
-	install -Dm644 "$srcdir"/$pkgname.conf "$pkgdir"/etc/$pkgname/$pkgname.conf
 	mkdir -p "$pkgdir"/etc/$pkgname/local.d "$pkgdir"/etc/$pkgname/override.d
 
 	install -Dm644 "$srcdir"/$pkgname.logrotated "$pkgdir"/etc/logrotate.d/$pkgname
