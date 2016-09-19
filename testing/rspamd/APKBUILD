@@ -40,6 +40,8 @@ build() {
 		-DENABLE_PCRE2=ON \
 		-DENABLE_HYPERSCAN=ON \
 		-DHYPERSCAN_ROOT_DIR=/home/abuild/hyperscan \
+		-DENABLE_FANN=ON \
+		-DFANN_ROOT_DIR=/home/abuild/fann \
 		|| return 1
 	make || return 1
 }
