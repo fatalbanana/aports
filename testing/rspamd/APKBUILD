@@ -12,7 +12,7 @@ pkgusers="rspamd"
 pkggroups="rspamd"
 depends=""
 depends_dev=""
-makedepends="$depends_dev cmake libressl-dev libevent-dev glib-dev gmime-dev
+makedepends="$depends_dev cmake openssl-dev libevent-dev glib-dev gmime-dev
 	luajit-dev sqlite-dev file-dev pcre2-dev ragel"
 install="$pkgname.pre-install"
 source="https://rspamd.com/downloads/$pkgname-$pkgver.tar.xz
