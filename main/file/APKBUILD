@@ -31,6 +31,7 @@ build() {
 		--host=$CHOST \
 		--prefix=/usr \
 		--datadir=/usr/share \
+		--enable-static \
 		|| return 1
 	make || return 1
 	make tests || return 1
